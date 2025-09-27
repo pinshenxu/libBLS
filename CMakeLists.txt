@@ -36,6 +36,11 @@ list( APPEND CMAKE_MODULE_PATH ${LIBBLS_CMAKE_DIR} )
 find_library( GMP_LIBRARY NAMES "gmp" PATHS "${DEPS_INSTALL_ROOT}/lib" )
 find_library( GMPXX_LIBRARY NAMES "gmpxx" PATHS "${DEPS_INSTALL_ROOT}/lib" )
 find_library( CRYPTOPP_LIBRARY NAMES "crypto" PATHS "${DEPS_INSTALL_ROOT}/lib" )
+find_library( JSONRPCCPP-CLIENT_LIBRARY NAMES "jsonrpccpp-client" PATHS "${DEPS_INSTALL_ROOT}/lib" )
+find_library( JSONRPCCPP-SERVER_LIBRARY NAMES "jsonrpccpp-server" PATHS "${DEPS_INSTALL_ROOT}/lib" )
+find_library( JSONRPCCPP-COMMON_LIBRARY NAMES "jsonrpccpp-common" PATHS "${DEPS_INSTALL_ROOT}/lib" )
+find_library( JSONCPP_LIBRARY NAMES "jsoncpp" PATHS "${DEPS_INSTALL_ROOT}/lib" )
+find_library( CURL_LIBRARY NAMES "curl" PATHS "${DEPS_INSTALL_ROOT}/lib" )
 
 set( HUNTER_ENABLED OFF )
 
